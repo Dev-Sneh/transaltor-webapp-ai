@@ -6,8 +6,7 @@ import { ChatOpenAI } from "@langchain/openai";
 
 const parser = new StringOutputParser();
 const model = new ChatOpenAI({
-  // apiKey: process.env.OPENAI_API_KEY,
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
   model: "gpt-3.5-turbo",
 });
 
